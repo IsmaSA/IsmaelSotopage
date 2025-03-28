@@ -1,0 +1,218 @@
+/* === Base Styles === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* === Header === */
+  header {
+    background: #003366;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* === Navigation === */
+  nav {
+    background: #abb6ca;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .nav-menu,
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .nav-menu li,
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu a,
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav-menu a.active,
+  .nav-menu a:hover,
+  nav ul li a:hover {
+    color: #007acc;
+    text-decoration: underline;
+  }
+  
+  /* === Main Sections === */
+  section {
+    padding: 1.5rem 0;
+  }
+  
+  section h2 {
+    border-bottom: 2px solid #0078d4;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* === Contact Form === */
+  form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .btn {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #005a99;
+  }
+  
+  /* === Social Media === */
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #007acc;
+  }
+  
+  /* === Footer === */
+  footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 40px;
+  }
+  
+  /* === Research Page Specific === */
+  .research-entry {
+    background-color: #fff;
+    border-left: 4px solid #0078d4;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .research-entry h3 {
+    margin-top: 0;
+    color: #0078d4;
+  }
+  
+  .research-entry .date {
+    float: right;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .research-entry p {
+    margin: 0.5rem 0;
+  }
+  
+  .tags {
+    margin-top: 0.75rem;
+  }
+  
+  .tags span {
+    display: inline-block;
+    background-color: #0078d4;
+    color: #fff;
+    padding: 3px 8px;
+    margin-right: 6px;
+    margin-top: 5px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+  }
+  
+  .authors {
+    font-size: 0.7rem;
+    color: #555;
+    font-style: italic;
+    margin-top: 0.5rem;
+    clear: both;
+  }
+  
+  /* === Research Layout === */
+  .research-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .research-thumb {
+    width: 75px;
+    height: 150px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .research-text {
+    flex: 1;
+  }
+  
+  /* === Responsive === */
+  @media screen and (max-width: 400px) {
+    .research-content {
+      flex-direction: column;
+    }
+  
+    .research-thumb {
+      width: 100%;
+    }
+  }
+  
