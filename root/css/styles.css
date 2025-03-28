@@ -195,7 +195,7 @@ body {
   }
   
   .research-thumb {
-    width: 75px;
+    width: 150px;
     height: 150px;
     object-fit: cover;
     flex-shrink: 0;
