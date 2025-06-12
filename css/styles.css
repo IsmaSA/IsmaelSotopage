@@ -95,16 +95,6 @@
     flex: 1;
   }
   
-  /* === Responsive === */
-  @media screen and (max-width: 400px) {
-    .research-content {
-      flex-direction: column;
-    }
-  
-    .research-thumb {
-      width: 100%;
-    }
-  }
   
 
   /* === Talks Page Specific === */
