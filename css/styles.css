@@ -147,6 +147,12 @@ body {
     padding: 1rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .research-entry:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   }
   
   .research-entry h3 {
@@ -205,14 +211,104 @@ body {
     flex: 1;
   }
   
+
+  /* === Talks Page Specific === */
+  .talks-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .talk-entry {
+    background-color: #fff;
+    border-left: 4px solid #0078d4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .talk-entry:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .talk-title {
+    color: #0078d4;
+    font-weight: bold;
+  }
+
+  .download-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007acc;
+  }
+
+  .download-link:hover {
+    text-decoration: underline;
+  }
+
   /* === Responsive === */
   @media screen and (max-width: 400px) {
     .research-content {
       flex-direction: column;
     }
-  
+
     .research-thumb {
       width: 100%;
     }
   }
-  
+
+/* === Home Page Specific === */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../figure/Main.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  margin-bottom: 1rem;
+}
+
+.hero-buttons .btn {
+  margin: 0 0.5rem;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #007acc;
+  border: 2px solid #007acc;
+}
+
+.btn-secondary:hover {
+  background-color: #e6f0fa;
+}
+
+.about-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.about-link {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.about-link:hover {
+  color: #007acc;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+}
