@@ -1,122 +1,4 @@
-/* === Base Styles === */
-body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f9f9f9;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 960px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  /* === Header === */
-  header {
-    background: #003366;
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  /* === Navigation === */
-  nav {
-    background: #abb6ca;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .nav-menu,
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 10px;
-  }
-  
-  .nav-menu li,
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  .nav-menu a,
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .nav-menu a.active,
-  .nav-menu a:hover,
-  nav ul li a:hover {
-    color: #007acc;
-    text-decoration: underline;
-  }
-  
-  /* === Main Sections === */
-  section {
-    padding: 1.5rem 0;
-  }
-  
-  section h2 {
-    border-bottom: 2px solid #0078d4;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* === Contact Form === */
-  form {
-    margin-top: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 1rem;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  .btn {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #005a99;
-  }
-  
-  /* === Social Media === */
-  .social-icons {
-    display: flex;
-    gap: 20px;
+gap: 20px;
     justify-content: center;
     margin-top: 1rem;
   }
@@ -141,6 +23,7 @@ body {
   }
   
   /* === Research Page Specific === */
+
   .research-entry {
     background-color: #fff;
     border-left: 4px solid #0078d4;
@@ -179,13 +62,7 @@ body {
     background-color: #0078d4;
     color: #fff;
     padding: 3px 8px;
-    margin-right: 6px;
-    margin-top: 5px;
-    border-radius: 3px;
-    font-size: 0.75rem;
-  }
-  
-  .authors {
+@@ -183,36 +189,126 @@ body {
     font-size: 0.7rem;
     color: #555;
     font-style: italic;
@@ -210,15 +87,106 @@ body {
   .research-text {
     flex: 1;
   }
-  
+
+
+
+  /* === Talks Page Specific === */
+  .talks-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .talk-entry {
+    background-color: #fff;
+    border-left: 4px solid #0078d4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .talk-entry:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .talk-title {
+    color: #0078d4;
+    font-weight: bold;
+  }
+
+  .download-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007acc;
+  }
+
+  .download-link:hover {
+    text-decoration: underline;
+  }
+
   /* === Responsive === */
   @media screen and (max-width: 400px) {
     .research-content {
       flex-direction: column;
     }
-  
+
     .research-thumb {
       width: 100%;
     }
   }
-  
+
+/* === Home Page Specific === */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../figure/Main.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  margin-bottom: 1rem;
+}
+
+.hero-buttons .btn {
+  margin: 0 0.5rem;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #007acc;
+  border: 2px solid #007acc;
+}
+
+.btn-secondary:hover {
+  background-color: #e6f0fa;
+}
+
+.about-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.about-link {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.about-link:hover {
+  color: #007acc;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+}
