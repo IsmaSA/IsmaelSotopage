@@ -211,14 +211,49 @@ body {
     flex: 1;
   }
   
+
+  /* === Talks Page Specific === */
+  .talks-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .talk-entry {
+    background-color: #fff;
+    border-left: 4px solid #0078d4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .talk-entry:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .talk-title {
+    color: #0078d4;
+    font-weight: bold;
+  }
+
+  .download-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007acc;
+  }
+
+  .download-link:hover {
+    text-decoration: underline;
+  }
+
   /* === Responsive === */
   @media screen and (max-width: 400px) {
     .research-content {
       flex-direction: column;
     }
-  
+
     .research-thumb {
       width: 100%;
     }
   }
-  
